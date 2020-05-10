@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> För skojj skull </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">   <!-- länkar till min css-fil -->
 </head>
-<body class="index">
+<body class="index"> <!-- Använder class på varje sida i varje body för att få en tydlig struktur i min css-fil -->
 
-    <nav>
+    <nav> <!-- Min globala meny -->
         <ul>
+            <li><a class="active" href="index.html">Hem</a></li>  <!-- Gjorde en active-klass för att enkelt kunna markera vilken länk man är inne på. Istället för a:active, Tim sa till oss att göra så på vårt senaste grupparbete -->
             <li><a href="historia.html"> Bilens historia</a> </li>
-            <li><a href="utveckling.html">  Bilens utveckling  </a>    </li>
+            <li><a href="utveckling.html">  Bilens utveckling  </a>    </li>  <!-- Länkar till de olika sidorna -->
             <li><a href="idag.html">Bilar idag</a> </li>
             <li><a href="kontakt.html"> Kontakt</a></li>
-        </ul>
+        </ul>   
     </nav>
 
-	<section class="container">
-		<div class="rad1"> </div>
-		<div class="rad2"> 
-            <header>Hej och välkommen till min hemsida om bilar</header>
+	<div class="container"> <!-- Används för att bestämma min trespaltslayout -->
+		<div class="rad1"> </div>  <!--  -->
+		<main class="rad2"> <!-- Markerar att det är mitt huvudinnehåll på sidan -->
+            <header>Hej och välkommen till min hemsida om bilar</header>   <!-- Används som rubrik på förstasidan för att folk ska få en snabb och tydlig uppfattning till vad sidans syfe är -->
 
-            <iframe width="720" height="400" src="https://www.youtube.com/watch?v=bx2G6dTdtMk">
-            </iframe>
-        </div>
-		<div class="rad3"></div>
-	</section>
+            <iframe width="720" height="400" src="https://www.youtube.com/watch?v=bx2G6dTdtMk"></iframe> <!-- Lägger en video på förstasidan -->
+            <footer>Här får ni ett smakprov</footer>    <!-- Text som man lägger under filmen -->
+        </main>
+	    <div class="rad3"></div> <!--  -->
+	</div>
 
 </body>
 </html>
