@@ -31,21 +31,28 @@ nav:not(.lokalmeny) a{ /* säger att det INTE gäller min lokalmeny med taggen N
 	font-weight: bold; /* Gör länkarna fetstilta */
 }
 
-nav a:hover{
-	color: black; /* Gör texten svart när man drar musen över länkarna */
-}
 
-nav ul li a.active{
-	color: black;
+
+.lokalmeny ul li a:link{
+	text-decoration: none;
 }
 
 .lokalmeny ul li a:visited{
 	color: black;
 }
 
-.lokalmeny ul li a:link{
-	text-decoration: none;
+nav a:hover{
+	color: black; /* Gör texten svart när man drar musen över länkarna */
 }
+
+
+nav ul li a.active{
+	color: black;
+}
+
+
+
+
 
 .index header{
 	margin-bottom: 5vh; /* gör ett space under min header */
@@ -191,3 +198,6 @@ h1, h2{
 	background-color: white;
 }
 
+form textarea{
+	background-color: pink;
+}
